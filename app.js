@@ -31,7 +31,7 @@ const aTag = document.querySelector(`a`);
 // console.dir(aTag);
 
 // 7b
-aTag.href = `https://fandomwire.com/15-greatest-animated-superhero-shows-ever-made-ranked/&quot;`
+aTag.href = `https://fandomwire.com/15-greatest-animated-superhero-shows-ever-made-ranked/&quot;`;
 
 // 8
 h1.classList.add(`background`, `text-color`);
@@ -64,9 +64,12 @@ const superMan = document.querySelector(`ul>li`);
 // console.dir(superMan);
 superMan.remove();
 
+// OR
+// document.querySelector(`ul>li`).remove();
+
 // 13a
 const divs = document.querySelectorAll(`div`);
-console.dir(divs);
+// console.dir(divs);
 
 // 13b
 for (i=0; i < divs.length; i++) {
@@ -86,6 +89,6 @@ const avengers = [
 // 14b
 for (i=0; i < avengers.length; i++){
     const spanLoop = document.createElement(`span`);
-    spanLoop.innerText = (`${avengers[i]} `);
+    spanLoop.innerText = `${avengers[i]} `;
     body.append(spanLoop);
 }
